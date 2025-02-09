@@ -1,0 +1,119 @@
+/* Base styles */
+body {
+    background: linear-gradient(135deg, #f8cdda, #1d2b64);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading in the chat container */
+.chat-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Chat box styling */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* General message styling */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User messages (aligned right) */
+.user-message {
+    background-color: rgba(255, 255, 255, 0.2);
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Nimra messages (aligned left, romantic pink background) */
+.nimra-message {
+    background-color: rgba(255, 105, 180, 0.4);
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Input area styling */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+/* User input styling */
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Send button styling */
+#send-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #ff85c1;
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 600px) {
+    .chat-container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .chat-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .chat-box {
+        height: 300px;  /* Reduced height on smaller screens */
+        padding: 10px;
+    }
+
+    #user-input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #send-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
