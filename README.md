@@ -1,0 +1,2 @@
+# nimrasbot
+mybot
